@@ -18,10 +18,10 @@ define({
 	dropdown2:"经济学 <b class='caret'></b>",
 	
 	dropdown_menu1:"<li><a href='/html/'>HTML</a></li>"+
-					"<li><a href='css'>CSS</a></li>"+
-					"<li><a href='javascript'>JavaScript</a></li>"+
-					"<li><a href='jquery'>jQuery</a></li>"+
-					"<li><a href='nodejs'>Node.js</a></li>",
+					"<li><a href='/css/'>CSS</a></li>"+
+					"<li><a href='/javascript/'>JavaScript</a></li>"+
+					"<li><a href='/jquery/'>jQuery</a></li>"+
+					"<li><a href='/nodejs/'>Node.js</a></li>",
 					
 	dropdown_menu2:"<li><a href='#'>宏观经济学</a></li>"+
 					"<li><a href='#'>微观经济学</a></li>"+
