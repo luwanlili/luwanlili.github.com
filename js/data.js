@@ -10,7 +10,7 @@ define({
 	link5:'退出',
 	
 	home_page_href:"/",
-	link1_href:"/CPP/",
+	link1_href:"/cpp/",
 	link2_href:"/JavaScript/",
 	link3_href:"/HTML5/",
 	
