@@ -9,7 +9,7 @@ define({
 	link4:'哲学',
 	link5:'退出',
 	
-	home_page_href:"/blog/",
+	home_page_href:"/",
 	link1_href:"/CPP/",
 	link2_href:"/JavaScript/",
 	link3_href:"/HTML5/",
