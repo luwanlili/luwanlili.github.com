@@ -6,13 +6,14 @@ define({
 	link1:'C',
 	link2:'C++',
 	link3:'PHP',
-	link4:'哲学',
+	link4:'数学',
 	link5:'退出',
 	
 	home_page_href:"/",
 	link1_href:"/c/",
 	link2_href:"/cpp/",
 	link3_href:"/php/",
+	link4_href:""math,
 	
 	dropdown1:"Web <b class='caret'></b>",
 	dropdown2:"经济学 <b class='caret'></b>",
