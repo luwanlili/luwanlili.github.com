@@ -44,5 +44,19 @@ define(function(require, exports, module) {
     $("pre").addClass("prettyprint");	//.addClass("prettyprint linenums");
     prettyPrint();
 
+//导航栏事件
+$('.nav li').each(function(){
+	$(this).click(function(){
+		$('.nav .active').removeClass('active');
+		$(this).addClass('active');
+		var tag1=$('.nav .active a').text();
+		
+		if(tag1.indexOf(' ')!=-1){	//针对有下拉菜单的情况,比如"经济学","社会学"
+			tag1=trim(tag1.substring(0,tag1.indexOf(' ')));
+		}
+		initHomePage(tag1);
+	});
+});
+
 //end define
 });
