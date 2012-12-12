@@ -1,7 +1,7 @@
 //data.js
 define({
 	title:'停住,思考使人进步',
-    brand: '家·歌',
+    brand: '佳·歌',
 	home_page:'首页',
 	link1:'C',
 	link2:'C++',
