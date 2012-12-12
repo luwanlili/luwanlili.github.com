@@ -13,7 +13,7 @@ define({
 	link1_href:"/c/",
 	link2_href:"/cpp/",
 	link3_href:"/php/",
-	link4_href:""math,
+	link4_href:"/math/",
 	
 	dropdown1:"Web <b class='caret'></b>",
 	dropdown2:"经济学 <b class='caret'></b>",
