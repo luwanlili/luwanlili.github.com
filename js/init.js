@@ -44,13 +44,5 @@ define(function(require, exports, module) {
     $("pre").addClass("prettyprint");	//.addClass("prettyprint linenums");
     prettyPrint();
 
-//导航栏事件
-$('.nav li').each(function(){
-	$(this).click(function(){
-		$('.nav .active').removeClass('active');
-		$(this).addClass('active');
-	});
-});
-
 //end define
 });
