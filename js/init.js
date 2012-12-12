@@ -38,6 +38,7 @@ define(function(require, exports, module) {
 	$('form.navbar-search input').attr('placeholder',data.placeholder);
 	
 	$('.nav.pull-right li:eq(0) a').html(data.link4);
+	$('.nav.pull-right li:eq(0) a').attr('href',data.link4_href);
 
 
     $("pre").addClass("prettyprint");	//.addClass("prettyprint linenums");
