@@ -1,5 +1,5 @@
 <div class="span4">
-	<h4>{{ site.tagName }}</h4>
+	<h4>ĞÄÁéæäÕ¾</h4>
 	{% for post in site.posts %}
 	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
 	{% endfor %}
