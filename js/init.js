@@ -2,7 +2,7 @@
 define(function(require, exports, module) {
 	require('../css/bootstrap.css');
 	//require('../css/bootstrap.min.css');
-	//require('../js/jquery-1.7.2.min.js');
+	require('../js/jquery-1.7.2.min.js');
 	var $ = require('../js/sea_jquery.js');
 	require('../js/jquery-ui.min.js');
 
