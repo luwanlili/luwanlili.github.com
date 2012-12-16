@@ -14,7 +14,7 @@ define(function(require, exports, module) {
     var myData = require('../js/data.js');
 
 	require('../js/plugins/bootstrap-tab.js');
-	//require('../js/plugins/bootstrap-dropdown.js');
+	require('../js/plugins/bootstrap-dropdown.js');
 	
 	//$('title').html(myData.title);
     $('.brand').html(myData.brand);
