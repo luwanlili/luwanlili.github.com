@@ -4,17 +4,16 @@ define(function(require, exports, module) {
 	//require('../css/bootstrap.min.css');
 	require('../js/jquery-1.7.2.min.js');
 	require('../js/jquery-ui.min.js');
-	
-	require('../js/plugins/bootstrap-dropdown.js');
-	require('../js/plugins/bootstrap-tab.js');
-	
+
 	require('../css/prettify.css');
 	require('../css/style.css');
 	require('../js/prettify.js');
 	
 	//var $ = require('../js/sea_jquery.js');
     var data = require('../js/data.js');
-	
+
+	require('../js/plugins/bootstrap-tab.js');
+	require('../js/plugins/bootstrap-dropdown.js');
 	
 	//$('title').html(data.title);
     $('.brand').html(data.brand);
