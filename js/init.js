@@ -11,34 +11,34 @@ define(function(require, exports, module) {
 	require('../js/prettify.js');
 	
 	
-    var data = require('../js/data.js');
+    var myData = require('../js/data.js');
 
 	require('../js/plugins/bootstrap-tab.js');
 	//require('../js/plugins/bootstrap-dropdown.js');
 	
-	//$('title').html(data.title);
-    $('.brand').html(data.brand);
-	$('.nav li:eq(0) a').html(data.home_page);
-	$('.nav li:eq(0) a').attr('href',data.home_page_href);
-	$('.nav li:eq(1) a').html(data.link1);
-	$('.nav li:eq(1) a').attr('href',data.link1_href);
-	$('.nav li:eq(2) a').html(data.link2);
-	$('.nav li:eq(2) a').attr('href',data.link2_href);
-	$('.nav li:eq(3) a').html(data.link3);
-	$('.nav li:eq(3) a').attr('href',data.link3_href);
+	//$('title').html(myData.title);
+    $('.brand').html(myData.brand);
+	$('.nav li:eq(0) a').html(myData.home_page);
+	$('.nav li:eq(0) a').attr('href',myData.home_page_href);
+	$('.nav li:eq(1) a').html(myData.link1);
+	$('.nav li:eq(1) a').attr('href',myData.link1_href);
+	$('.nav li:eq(2) a').html(myData.link2);
+	$('.nav li:eq(2) a').attr('href',myData.link2_href);
+	$('.nav li:eq(3) a').html(myData.link3);
+	$('.nav li:eq(3) a').attr('href',myData.link3_href);
 	
-	$('.dropdown a:eq(0).dropdown-toggle').html(data.dropdown1);
-	$('.dropdown a.dropdown-toggle:eq(1)').html(data.dropdown2);
+	$('.dropdown a:eq(0).dropdown-toggle').html(myData.dropdown1);
+	$('.dropdown a.dropdown-toggle:eq(1)').html(myData.dropdown2);
 	
 	//下拉菜单
-	$('ul.dropdown-menu:eq(0)').html(data.dropdown_menu1);
-	$('ul.dropdown-menu:eq(1)').html(data.dropdown_menu2);
-	//$('ul.dropdown-menu:eq(2)').html(data.dropdown_menu2);
+	$('ul.dropdown-menu:eq(0)').html(myData.dropdown_menu1);
+	$('ul.dropdown-menu:eq(1)').html(myData.dropdown_menu2);
+	//$('ul.dropdown-menu:eq(2)').html(myData.dropdown_menu2);
 	
-	$('form.navbar-search input').attr('placeholder',data.placeholder);
+	$('form.navbar-search input').attr('placeholder',myData.placeholder);
 	
-	$('.nav.pull-right li:eq(0) a').html(data.link4);
-	$('.nav.pull-right li:eq(0) a').attr('href',data.link4_href);
+	$('.nav.pull-right li:eq(0) a').html(myData.link4);
+	$('.nav.pull-right li:eq(0) a').attr('href',myData.link4_href);
 
 
     $("pre").addClass("prettyprint");	//.addClass("prettyprint linenums");
