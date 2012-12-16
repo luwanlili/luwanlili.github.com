@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="icon" type="image/vnd.microsoft.icon" href="http://luwanlili.github.com/img/phosting.ico">
   <meta charset=utf-8 />
+  <link rel="icon" type="image/vnd.microsoft.icon" href="http://luwanlili.github.com/img/phosting.ico">
+  
+  <link type="text/css" href="http://luwanlili.github.com/css/bootstrap.css">
+  <link type="text/css" href="http://luwanlili.github.com/css/prettify.css">
+  <link type="text/css" href="http://luwanlili.github.com/css/style.css">
+  
+  
   <title>佳 | {{ page.title }}</title>
-  <script src="http://luwanlili.github.com/js/sea.js" data-main="http://luwanlili.github.com/js/init.js"></script>
+  <script type="text/javascript" src="http://luwanlili.github.com/js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="http://luwanlili.github.com/js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="http://luwanlili.github.com/js/prettify.js"></script>
+  <script type="text/javascript" src="http://luwanlili.github.com/js/plugins/bootstrap-tab.js"></script>
+  <script type="text/javascript" src="http://luwanlili.github.com/js/plugins/bootstrap-dropdown.js"></script>
+
 </head>
 <body>
 <div class="divself">
@@ -20,23 +31,44 @@
 			        
 			        <div class="nav-collapse">
 			          <ul class="nav">
-			            <li class="active"><a href="#"></a></li>
-			            <li><a href="#"></a></li>
-			            <li><a href="#"></a></li>
-			            <li><a href="#"></a></li>
+			            <li class="active">首页<a href="/"></a></li>
+			            <li><a href="/c/">C</a></li>
+			            <li><a href="/cpp/">C++</a></li>
+			            <li><a href="/php/">PHP</a></li>
 			            <li class="dropdown">
-			              <a data-toggle="dropdown" class="dropdown-toggle"> </a>
+			              <a data-toggle="dropdown" class="dropdown-toggle"> 
+							<li><a href='/html/'>HTML</a></li>
+							<li><a href='/css/'>CSS</a></li>
+							<li><a href='/javascript/'>JavaScript</a></li>
+							<li><a href='/jquery/'>jQuery</a></li>
+							<li><a href='/nodejs/'>Node.js</a></li>
+						  </a>
 			              <ul class="dropdown-menu"></ul>
 			            </li>
 			          </ul>
 			          <form action="" class="navbar-search pull-left">
-			            <input type="text" placeholder="" class="search-query span3">
+			            <input type="text" placeholder="搜索" class="search-query span3">
 			          </form>
 			          <ul class="nav pull-right">
-			            <li><a href="#"></a></li>
+			            <li><a href="/math/">数学</a></li>
 			            <li class="divider-vertical"></li>
 			            <li class="dropdown">
-			              <a data-toggle="dropdown" class="dropdown-toggle"></a>
+			              <a data-toggle="dropdown" class="dropdown-toggle">
+							<li><a href='#'>宏观经济学</a></li>
+							<li><a href='#'>微观经济学</a></li>
+							<li><a href='#'>金融经济学</a></li>
+							<li><a href='#'>产业组织</a></li>
+							<li><a href='#'>计量经济学</a></li>
+							<li><a href='#'>国际贸易理论</a></li>
+							<li class='divider'></li>
+							<li class='nav-header'>其它经济学</li>
+							<li><a href='#'>发展经济学</a></li>
+							<li><a href='#'>公共经济学</a></li>
+							<li><a href='#'>经济思想史</a></li>
+							<li><a href='#'>农业与资源经济学</a></li>
+							<li><a href='#'>大师与经典</a></li>
+							<li><a href='#'>制度分析</a></li>
+						  </a>
 			              <ul class="dropdown-menu"></ul>
 			            </li>
 						<!--<li><a id="logout"></a></li>-->
@@ -69,5 +101,13 @@
 		<a href="#top" title="返回顶部" href="#" onmouseout="this.style.backgroundPosition='0 0';" onmouseover="this.style.backgroundPosition='-32px 0';">返回顶部</a>
 </div>
 
+<script type="text/javascript">
+$(window).ready(function(){
+	$("pre").addClass("prettyprint");	//.addClass("prettyprint linenums");
+	prettyPrint();
+});
+</script>
+
+	
 </body>
 </html>
