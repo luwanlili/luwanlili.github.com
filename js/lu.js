@@ -2,7 +2,7 @@ $(window).ready(function(){
 	$("pre").addClass("prettyprint");	//.addClass("prettyprint linenums");
 	prettyPrint();
 	
-	setInterval("startRequest()",5000);
+	setInterval("startRequest()",120000);
 });
 
 function startRequest(){
