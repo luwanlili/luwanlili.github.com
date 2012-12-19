@@ -13,15 +13,15 @@ title: javascript 定时器 实现时间自动更新的特效
 				<p>图片自己找几个替换下就OK了! </p>
 					<pre>
 <code>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
-<style>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+&lt;title&gt;无标题文档&lt;/title&gt;
+&lt;style&gt;
 img{padding:0 ;margin:0;}
-</style>
-<script type="text/javascript">
+&lt;/style&gt;
+&lt;script type="text/javascript"&gt;
 
 window.onload = function() {
 	var num = null ;
@@ -29,7 +29,7 @@ window.onload = function() {
 	
 	
 	function toDouble(num){
-		return num < 10 ? "0" + num : ""+num ;
+		return num &lt; 10 ? "0" + num : ""+num ;
 	}
  
 	function fnTime(){
@@ -44,7 +44,7 @@ window.onload = function() {
 		var time = toDouble(year) + toDouble(month) + toDouble(day)  + toDouble(hours) +  toDouble(minutes) + toDouble(seconds);
 
 	 
-		for(var i = 0 ,length = time.length; i < length; i++){
+		for(var i = 0 ,length = time.length; i &lt; length; i++){
 			aImg[i].src = "images/"+ time.charAt(i)+".gif";	
 		}
 	}
@@ -52,21 +52,21 @@ window.onload = function() {
 	fnTime();
 }
 	
-</script>
-</head>
+&lt;/script&gt;
+&lt;/head&gt;
 
-<body>
+&lt;body&gt;
  
-   <div id="time"> 
-			<img src=images/0.gif /><img src=images/0.gif /><img src=images/0.gif /><img src=images/0.gif />年
-			<img src=images/0.gif /><img src=images/0.gif />月
-			<img src=images/0.gif /><img src=images/0.gif />日
-			<img src=images/0.gif /><img src=images/0.gif />时 	
-			<img src=images/0.gif /><img src=images/0.gif />分
-			<img src=images/0.gif /><img src=images/0.gif />秒
-   	</div>
-</body>
-</html>
+   &lt;div id="time"&gt; 
+			&lt;img src=images/0.gif /&gt;&lt;img src=images/0.gif /&gt;&lt;img src=images/0.gif /&gt;&lt;img src=images/0.gif /&gt;年
+			&lt;img src=images/0.gif /&gt;&lt;img src=images/0.gif /&gt;月
+			&lt;img src=images/0.gif /&gt;&lt;img src=images/0.gif /&gt;日
+			&lt;img src=images/0.gif /&gt;&lt;img src=images/0.gif /&gt;时 	
+			&lt;img src=images/0.gif /&gt;&lt;img src=images/0.gif /&gt;分
+			&lt;img src=images/0.gif /&gt;&lt;img src=images/0.gif /&gt;秒
+   	&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 
 
 </code>
@@ -74,28 +74,28 @@ window.onload = function() {
 		
 <pre>
 <code>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
-<style>
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+&lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
+&lt;title&gt;无标题文档&lt;/title&gt;
+&lt;style&gt;
 img{padding:0 ;margin:0;}
-</style>
-<script type="text/javascript">
+&lt;/style&gt;
+&lt;script type="text/javascript"&gt;
 
 window.onload = function() {
 	var num = null ;
 	var pic = "";
 	var oSpan = document.getElementsByTagName("span")[0];
-	for(var i = 0 ; i < 4; i++){
+	for(var i = 0 ; i &lt; 4; i++){
 		num = Math.floor(Math.random()*10) ;
-		pic += "<img src=images/"+num+".gif />";
+		pic += "&lt;img src=images/"+num+".gif /&gt;";
 	}
 	oSpan.innerHTML = pic; //alert(oSpan.innerHTML);
 	
 	function toDouble(num){
-		return num < 10 ? "0" + num : ""+num ;
+		return num &lt; 10 ? "0" + num : ""+num ;
 	}
  
 	
@@ -113,13 +113,13 @@ window.onload = function() {
 	 
 		pic = "";
 		var index = null;
-		for(var i = 0 ; i < arrTime.length; i++){
+		for(var i = 0 ; i &lt; arrTime.length; i++){
 			index = arrTime[i];
 			if(isNaN(index)){
 				pic += index;
 			} else {
-				for(var n = 0 ; n < index.length; n++){
-					pic += "<img src=images/"+ index.charAt(n)+".gif />" ;	
+				for(var n = 0 ; n &lt; index.length; n++){
+					pic += "&lt;img src=images/"+ index.charAt(n)+".gif /&gt;" ;	
 				}		
 			}
 		}
@@ -131,14 +131,14 @@ window.onload = function() {
 }
 
 	
-</script>
-</head>
+&lt;/script&gt;
+&lt;/head&gt;
 
-<body>
+&lt;body&gt;
   
-   <input type="text" value=""  /> <span></span><br /><span id="time"></span>
-</body>
-</html>		
+   &lt;input type="text" value=""  /&gt; &lt;span&gt;&lt;/span&gt;&lt;br /&gt;&lt;span id="time"&gt;&lt;/span&gt;
+&lt;/body&gt;
+&lt;/html&gt;		
 </code>
 </pre>		
 	</div>
