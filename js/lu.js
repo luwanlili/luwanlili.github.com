@@ -6,5 +6,5 @@ $(window).ready(function(){
 });
 
 function startRequest(){
-	$("#date").text((new Date()).toString());
+	window.location.reload();
 }
