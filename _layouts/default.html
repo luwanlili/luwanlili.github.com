@@ -6,7 +6,23 @@
  <link rel="icon" type="image/vnd.microsoft.icon" href="http://www.luwanjia.com/img/phosting.ico">
   <link rel="stylesheet" type="text/css" href="http://www.luwanjia.com/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="http://www.luwanjia.com/css/prettify.css">
-  <link rel="stylesheet" type="text/css" href="http://www.luwanjia.com/css/style.css?v=1.00">
+  
+  
+    <script type="text/javascript" src="http://www.luwanjia.com/js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="http://www.luwanjia.com/js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="http://www.luwanjia.com/js/prettify.js"></script>
+  <script type="text/javascript" src="http://www.luwanjia.com/js/plugins/bootstrap-tab.js"></script>
+  <script type="text/javascript" src="http://www.luwanjia.com/js/plugins/bootstrap-dropdown.js"></script>
+<script type="text/javascript">
+document.write("<script type='text/javascript' src='http://www.luwanjia.com/js/lu.js?v="+Math.random()+"'></s"+"cript>");
+document.write("<link rel='stylesheet' type='text/css' href='http://www.luwanjia.com/css/style.css?v="+Math.random()+"'></s"+"cript>");
+
+
+	//下面两句移出放到js文件中时对页面的pre块渲染并不好,每一次调用都会闪一下
+	$("pre").addClass("prettyprint");	//.addClass("prettyprint linenums");
+	prettyPrint();
+</script>
+
   <title>佳 | {{ page.title }}</title>
 </head>
 <body>
@@ -88,18 +104,6 @@
 <div id="ujian-backtop">
 		<a href="#top" title="返回顶部" href="#" onmouseout="this.style.backgroundPosition='0 0';" onmouseover="this.style.backgroundPosition='-32px 0';">返回顶部</a>
 </div>
-  <script type="text/javascript" src="http://www.luwanjia.com/js/jquery-1.7.2.min.js"></script>
-  <script type="text/javascript" src="http://www.luwanjia.com/js/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="http://www.luwanjia.com/js/prettify.js"></script>
-  <script type="text/javascript" src="http://www.luwanjia.com/js/plugins/bootstrap-tab.js"></script>
-  <script type="text/javascript" src="http://www.luwanjia.com/js/plugins/bootstrap-dropdown.js"></script>
-  <script type="text/javascript" src="http://www.luwanjia.com/js/lu.js?v=1.00"></script>
-<script type="text/javascript">
-document.write("<script type='text/javascript' src='http://www.luwanjia.com/js/lu.js?v="+Math.random()+"'></s"+"cript>")
 
-	//下面两句移出放到js文件中时对页面的pre块渲染并不好,每一次调用都会闪一下
-	$("pre").addClass("prettyprint");	//.addClass("prettyprint linenums");
-	prettyPrint();
-</script>
 </body>
 </html>
