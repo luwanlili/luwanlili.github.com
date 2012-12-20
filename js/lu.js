@@ -4,6 +4,17 @@ $(window).ready(function(){
 	
 	//setInterval("startRequest()",60000);//每分钟刷新一次
 	tagUpdate();
+	
+	
+	//导航栏事件
+	$('.nav li').each(function(){
+		$(this).click(function(){
+			$('.nav .active').removeClass('active');
+			$(this).addClass('active');
+		});
+	});
+
+
 });
 
 //定时刷新
@@ -16,3 +27,4 @@ function startRequest(){
 function tagUpdate(){
 	$(".span4").load(location.href+"?v="+Math.random()+' .span4>*');
 }
+
