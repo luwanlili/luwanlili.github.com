@@ -7,5 +7,5 @@ $(window).ready(function(){
 
 function startRequest(){
 	//window.location.reload();
-	$(".span4").load(location.href + ' .span4');
+	$(".span4").load(location.href + ' .span4>*');
 }
