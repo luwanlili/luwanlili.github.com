@@ -2,9 +2,10 @@ $(window).ready(function(){
 	$("pre").addClass("prettyprint");	//.addClass("prettyprint linenums");
 	prettyPrint();
 	
-	setInterval("startRequest()",120000);
+	setInterval("startRequest()",5000);
 });
 
 function startRequest(){
-	window.location.reload();
+	//window.location.reload();
+	$(#content).load(location.href + ' .span4>*');
 }
