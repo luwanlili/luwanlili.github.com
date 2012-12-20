@@ -2,11 +2,11 @@ $(window).ready(function(){
 	$("pre").addClass("prettyprint");	//.addClass("prettyprint linenums");
 	prettyPrint();
 	
-	setInterval("startRequest()",60000);//Ã¿·ÖÖÓË¢ÐÂÒ»´Î
+	setInterval("startRequest()",60000);//æ¯åˆ†é’Ÿåˆ·æ–°ä¸€æ¬¡
 });
 
 function startRequest(){
-	//window.location.reload(); //Õû¸öÒ³ÃæË¢ÐÂ
-	$(".span4").load(location.href + ' .span4>*'); //¾Ö²¿Ò³ÃæË¢ÐÂ,Òª×¢Òâ.span4ºóÃæµÄ>* (ËùÓÐºó´úÔªËØ)²»¿ÉÈ±ÉÙ£¬²»È»Ëû»á°Ñ×ÔÉíÌí¼Ó½øÀ´£¬¾Í³öÏÖÇ¶Ì×ÁË 
-	jQuery.ajaxSetup ({cache:false}); //Çå³ý±¾µØcache
+	//window.location.reload(); //æ•´ä¸ªé¡µé¢åˆ·æ–°
+	$(".span4").load(location.href + ' .span4>*'); //å±€éƒ¨é¡µé¢åˆ·æ–°,è¦æ³¨æ„.span4åŽé¢çš„>* (æ‰€æœ‰åŽä»£å…ƒç´ )ä¸å¯ç¼ºå°‘ï¼Œä¸ç„¶ä»–ä¼šæŠŠè‡ªèº«æ·»åŠ è¿›æ¥ï¼Œå°±å‡ºçŽ°åµŒå¥—äº† 
+	jQuery.ajaxSetup ({cache:false}); //æ¸…é™¤æœ¬åœ°cache
 }
