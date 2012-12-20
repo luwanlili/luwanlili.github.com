@@ -1,6 +1,6 @@
 $(window).ready(function(){
-	//$("pre").addClass("prettyprint");	//.addClass("prettyprint linenums");
-	//prettyPrint();
+	$("pre").addClass("prettyprint");	//.addClass("prettyprint linenums");
+	prettyPrint();
 	
 	setInterval("startRequest()",60000);//每分钟刷新一次
 });
