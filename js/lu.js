@@ -2,7 +2,7 @@ $(window).ready(function(){
 	$("pre").addClass("prettyprint");	//.addClass("prettyprint linenums");
 	prettyPrint();
 	
-	setInterval("startRequest()",5000);
+	setInterval("startRequest()",60000);//每分钟刷新一次
 });
 
 function startRequest(){
