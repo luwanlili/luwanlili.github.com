@@ -14,8 +14,7 @@
 	document.write("<script type='text/javascript' src='http://www.luwanjia.com/js/lu.js?v="+Math.random()+"'></s"+"cript>");
 	document.write("<link rel='stylesheet' type='text/css' href='http://www.luwanjia.com/css/style.css?v="+Math.random()+"'></s"+"cript>");
   </script>
-
-  <title>佳 | {{ page.title }}</title>
+  <title>{{ page.title }} | 佳</title>
 </head>
 <body>
 <div class="divself">
@@ -100,6 +99,9 @@
 	//下面两句移出放到js文件中时对页面的pre块渲染并不好,每一次调用都会闪一下
 	$("pre").addClass("prettyprint");	//.addClass("prettyprint linenums");
 	prettyPrint();
+	
+	$('.nav .active').removeClass('active');
+	$('.nav li:eq({{ site.JB.Index }})').addClass('active');
 </script>
 </body>
 </html>
