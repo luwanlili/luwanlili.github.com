@@ -1,5 +1,5 @@
-document.write("
-			<div class='navbar'>
+//
+document.write("<div class='navbar'>
 			    <div class='navbar-inner'>
 			      <div class='container'>
 			        <a data-target='.nav-collapse' data-toggle='collapse' class='btn btn-navbar'>
