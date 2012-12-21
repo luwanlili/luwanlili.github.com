@@ -1,2 +1,2 @@
 //
-<span color="red">²âÊÔ</span>
+document.write("<span>æµ‹è¯•</span>");
