@@ -2,9 +2,6 @@ $(window).ready(function(){
 	//$("pre").addClass("prettyprint");	//.addClass("prettyprint linenums");
 	//prettyPrint();
 
-	$('.nav .active').removeClass('active');
-	$('.nav li:eq({{ site.JB.Index }})').addClass('active');
-	
 	//setInterval("startRequest()",60000);//每分钟刷新一次
 	tagUpdate();
 });
