@@ -1,2 +1,2 @@
 //
-document.write("≤‚ ‘");
+<span color="red">≤‚ ‘</span>
