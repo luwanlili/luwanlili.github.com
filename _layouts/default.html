@@ -30,18 +30,18 @@
 			        
 			        <div class="nav-collapse">
 			          <ul class="nav">
-			            <li class="active"><a href="/">首页</a></li>
-			            <li><a href="/c/">C</a></li>
-			            <li><a href="/cpp/">C++</a></li>
-			            <li><a href="/php/">PHP</a></li>
-			            <li class="dropdown">
+			            <li id="home"><a href="/">首页</a></li>
+			            <li id="c"><a href="/c/">C</a></li>
+			            <li id="cpp"><a href="/cpp/">C++</a></li>
+			            <li id="php"><a href="/php/">PHP</a></li>
+			            <li  id="web" class="dropdown">
 			              <a data-toggle="dropdown" class="dropdown-toggle">Web <b class='caret'></b></a>
 			              <ul class="dropdown-menu">
-							<li><a href='/html/'>HTML</a></li>
-							<li><a href='/css3/'>CSS</a></li>
-							<li><a href='/javascript/'>JavaScript</a></li>
-							<li><a href='/jquery/'>jQuery</a></li>
-							<li><a href='/nodejs/'>Node.js</a></li>
+							<li id="html"><a href='/html/'>HTML</a></li>
+							<li id="css3"><a href='/css3/'>CSS</a></li>
+							<li id="javascript"><a href='/javascript/'>JavaScript</a></li>
+							<li id="jquery"><a href='/jquery/'>jQuery</a></li>
+							<li id="nodejs"><a href='/nodejs/'>Node.js</a></li>
 						  </ul>
 			            </li>
 			          </ul>
@@ -49,9 +49,9 @@
 			            <input type="text" placeholder="搜索" class="search-query span3">
 			          </form>
 			          <ul class="nav pull-right">
-			            <li><a href="/math/">数学</a></li>
+			            <li id="math"><a href="/math/">数学</a></li>
 			            <li class="divider-vertical"></li>
-			            <li class="dropdown">
+			            <li  id="" class="dropdown">
 			              <a data-toggle="dropdown" class="dropdown-toggle">经济学 <b class='caret'></b></a>
 			              <ul class="dropdown-menu">
 							<li><a href='#'>宏观经济学</a></li>
@@ -100,8 +100,10 @@
 	$("pre").addClass("prettyprint");	//.addClass("prettyprint linenums");
 	prettyPrint();
 	
-	$('.nav .active').removeClass('active');
-	$('.nav li:eq({{ site.JB.Index }})').addClass('active');
+	$('#{{ site.JB.id }}').addClass('active');
+	if({{ site.JB.menu }}==true){
+		$('#{{ site.JB.menuName }}').addClass('active');
+	}
 </script>
 </body>
 </html>
