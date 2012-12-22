@@ -9,7 +9,12 @@ body {
 	line-height: 24px;
 	color: #555555;
 }
-
+/*高度自适应*/
+.content{
+height:auto!important;  
+height:100px;  
+min-height:100px;  
+}
 .divself .space{margin:0 auto;}
 
 .divself {
