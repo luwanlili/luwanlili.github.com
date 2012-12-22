@@ -96,13 +96,9 @@
 		<a href="#top" title="返回顶部" href="#" onmouseout="this.style.backgroundPosition='0 0';" onmouseover="this.style.backgroundPosition='-32px 0';">返回顶部</a>
 </div>
 <script type="text/javascript">
-	//下面两句移出放到js文件中时对页面的pre块渲染并不好,每一次调用都会闪一下
-	$("pre").addClass("prettyprint");	//.addClass("prettyprint linenums");
-	prettyPrint();
-	
 	$('#{{ site.JB.id }}').addClass('active');
 	if({{ site.JB.menu }}==true){
-		$('#{{ site.JB.menuName }}').addClass('active');
+	  $('#{{ site.JB.menuName }}').addClass('active');
 	}
 </script>
 </body>
