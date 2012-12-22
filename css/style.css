@@ -12,8 +12,8 @@ body {
 /*高度自适应*/
 .content{
 height:auto!important;  
-height:650px;  
-min-height:650px;  
+height:600px;  
+min-height:600px;  
 }
 .divself .space{margin:0 auto;}
 
