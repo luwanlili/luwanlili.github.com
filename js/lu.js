@@ -4,6 +4,14 @@ $(window).ready(function(){
 
 	//setInterval("startRequest()",60000);//每分钟刷新一次
 	tagUpdate();
+	
+	$(".dropdown").mouseover(function(){
+	  $(".dropdown").addClass('open');
+	});
+	
+	$(".dropdown").mouseout(function(){
+	  $(".dropdown").removeClass('open');
+	});
 });
 
 //定时刷新
