@@ -5,13 +5,8 @@ $(window).ready(function(){
 	//setInterval("startRequest()",60000);//每分钟刷新一次
 	tagUpdate();
 	
-	$(".dropdown").mouseover(function(){
-	  $(".dropdown").addClass('open');
-	});
-	
-	$(".dropdown").mouseout(function(){
-	  $(".dropdown").removeClass('open');
-	});
+	dropdownEvent();
+
 });
 
 //定时刷新
@@ -23,4 +18,23 @@ function startRequest(){
 
 function tagUpdate(){
 	$(".span4").load(location.href+"?v="+Math.random()+' .span4>*');
+}
+
+function dropdownEvent(){
+
+	$("#web").mouseover(function(){
+	  $("#web").addClass('open');
+	});
+	
+	$("#web").mouseout(function(){
+	  $("#web").removeClass('open');
+	});
+	
+	$("#economic").mouseover(function(){
+	  $("#economic").addClass('open');
+	});
+	
+	$("#economic").mouseout(function(){
+	  $("#economic").removeClass('open');
+	});
 }
